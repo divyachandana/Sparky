@@ -1,0 +1,38 @@
+# Use the Nvidia PyTorch base image
+FROM nvcr.io/nvidia/l4t-pytorch:r32.7.1-pth1.9-py3
+
+# Add Kitware's public key for additional installations
+RUN apt-key adv --fetch-keys https://apt.kitware.com/keys/kitware-archive-latest.asc
+
+# Update package lists and install required packages
+RUN apt-get update && \
+    apt-get install -y \
+        python3-pip \
+        libopenblas-base \
+        libopenmpi-dev \
+        tesseract-ocr \
+        python3-opencv \
+        libopencv-dev \
+        mpg123 \
+        gstreamer1.0-plugins-good \
+        espeak
+
+# Upgrade pip
+RUN pip3 install --upgrade pip
+
+# Install Python libraries
+RUN pip3 install \
+        pytesseract \
+        numpy \
+        pandas \
+        jupyterlab \
+        Jetson.GPIO \
+        openai \
+        google-cloud-texttospeech \
+        matplotlib \
+        playsound \
+        pyttsx3
+
+# Set up working directory
+WORKDIR /workspace
+
