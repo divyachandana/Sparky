@@ -58,6 +58,12 @@ Once the container is running, access Jupyter Lab in your web browser by navigat
 ### 5. Start Using Sparky
 You're now ready to start using Sparky for various tasks! Refer to the documentation for usage instructions and examples.
 
+![sparky](https://github.com/divyachandana/Sparky/assets/5434731/f21fc519-8da8-4df1-8dbd-cc3f97d4b8a2)
+
+https://youtu.be/plg67ASwQAs
+https://youtu.be/oaKm5daPFPc
+
+
 
 This guide outlines the steps required to set up and run Sparky AI Assistant using Docker, providing clear instructions and explanations for each step. Adjust the paths and commands as necessary based on your specific setup.
 
